@@ -8,6 +8,7 @@ const logger = require("morgan");
 app.use(logger("combined"));
 const numCPUs = os.cpus().length;
 
+// nodeのクラスター化処理
 if (cluster.isMaster) {
   for (let i = 0; i < numCPUs; i++) {
     console.info(" worker %dを起動します。", i);
@@ -27,6 +28,9 @@ if (cluster.isMaster) {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
+  // APIルーティング
+  const router = require("./api/routes/index");
+  app.use("/api/v1/", router);
   app.listen(port);
   console.info("Server is UP");
 }
