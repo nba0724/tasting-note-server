@@ -1,0 +1,29 @@
+{
+  "name": "tasting-note-server",
+  "version": "1.0.0",
+  "description": "J.S.A.ソムリエ・J.S.A.ワインエキスパート呼称資格認定試験の二次試験のテイスティングコメントを残すのに使用するアプリのサーバ処理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nba0724/tasting-note-server.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "tasting",
+    "jsa",
+    "wine"
+  ],
+  "author": "Allen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nba0724/tasting-note-server/issues"
+  },
+  "homepage": "https://github.com/nba0724/tasting-note-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
