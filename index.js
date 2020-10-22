@@ -29,7 +29,7 @@ if (cluster.isMaster) {
   app.use(express.urlencoded({ extended: true }));
 
   // APIルーティング
-  const router = require("./api/routes/index");
+  const router = require("./routes/index");
   app.use("/api/v1/", router);
   app.listen(port);
   console.info("Server is UP");
