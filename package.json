@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/nba0724/tasting-note-server#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "morgan": "^1.10.0"
   }
 }
