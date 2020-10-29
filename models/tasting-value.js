@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      tastingValue.belongsTo(models.tastingSheet, {
+      models["tasting-value"].belongsTo(models["tasting-sheet"], {
         foreignKey: "tasting_id",
         targetKey: "tasting_id"
       });
